@@ -29,7 +29,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Step 3
 - Step 4
 
-<h2>Deployment and Configuration Steps</h2>
+<h2>Deployment and Walkthrough</h2>
 
 <p>
 <img width="237" alt="image" src="https://github.com/user-attachments/assets/82c02c34-2f77-497e-880b-2e6962f0121d" />
@@ -80,7 +80,7 @@ This setup provides hands-on experience with real-world administrative tasks and
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="870" alt="image" src="https://github.com/user-attachments/assets/79172a71-3245-4864-9611-5fb8e3b70adc" />
 </p>
 <p>
   
