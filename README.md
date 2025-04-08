@@ -126,10 +126,39 @@ Assigning a static IP to your Domain Controller ensures:
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="949" alt="image" src="https://github.com/user-attachments/assets/cfa993c0-f239-461b-9684-85234c312727" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  
+## 🔁 Pointing the Client to the Domain Controller
+
+Now that our **Client VM** is set up, it’s time to **change its DNS server** from the default one provided by Microsoft (via the VNet) to our **Domain Controller**.
+
+---
+
+### 🧭 Why This Matters
+
+Updating the DNS server ensures that the Client will:
+
+- 🔍 Look to the **Domain Controller** for **DNS resolution**
+- 🔗 Be able to **resolve names to IPs** and vice versa within the domain
+- 🏢 Successfully **join the domain**
+
+This step is essential for enabling proper communication between the Client and the DC, allowing domain services like:
+
+- ✅ Authentication  
+- ✅ Group Policy application  
+- ✅ File sharing  
+- ✅ Network resource discovery
+
+---
+
+### 🛠️ What You’re Doing
+
+You're telling the Client:  
+> “From now on, ask **the Domain Controller** for directions—not Microsoft.”
+
+This change aligns the Client with your internal network structure and prepares it for seamless domain integration.
 </p>
 <br />
 
