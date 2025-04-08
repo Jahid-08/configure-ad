@@ -36,18 +36,54 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <p>
   
-  So, with this lab we are going to start by creating out virtual machine for the **domain controller**, then create the one for our client. I will provide the final screenshot above. The purpouse of setting up both of these virtual machines is because it is laying the groundwork for more advanced tasks in system administration, network management, and cybersecurity.
-  <br/>
-  For the **Domain Controller**, it serves as the central authority for the Active Directory domain, acting as the primary DNS server and file server for the network. It manages user accounts, security groups, and Group Policies, essentially functioning as the core of the network's identity and access management system.
-  <br/> 
-  For the **Client**, the Client  machine represents a typical end-user workstation within the domain. It's used to test and verify various domain functionalities, including user authentication, file share access, DNS resolution, and the application of Group Policies. This setup allows for hands-on practice with common administrative tasks and security configurations in a simulated corporate network environment.
-</p>
+  In this lab, we’ll begin by **creating two virtual machines**:
+
+- One for the **Domain Controller (DC)**
+- One for the **Client**
+
+> 📸 _A final screenshot of the completed setup will be provided above._
+
+---
+
+### 🎯 Purpose of This Setup
+
+This foundational setup lays the groundwork for more advanced tasks in:
+
+- 🛠️ **System Administration**
+- 🌐 **Network Management**
+- 🛡️ **Cybersecurity**
+
+---
+
+### 🖥️ Domain Controller (DC)
+
+The **Domain Controller** acts as the **central authority** for the Active Directory domain. It serves key roles such as:
+
+- Primary **DNS server**
+- **File server** for the network
+- Manager of **user accounts**, **security groups**, and **Group Policies**
+
+Essentially, the DC functions as the **core of identity and access management** in the domain.
+
+---
+
+### 👤 Client Machine
+
+The **Client VM** simulates a typical **end-user workstation** in a domain environment. It allows you to test and verify:
+
+- ✅ **User authentication**
+- 📂 **File share access**
+- 🌍 **DNS resolution**
+- 🧩 **Group Policy application**
+
+This setup provides hands-on experience with real-world administrative tasks and security configurations in a simulated **corporate network environment**.
 <br />
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+  
 Now that we've got the initial setup complete, it's time to assign a **static IP address** to the **Domain Controller (DC)**. This is a crucial step to ensure network stability and reliable domain operations.
 
 ---
