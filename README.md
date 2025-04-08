@@ -48,7 +48,44 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Now that we've got the initial setup complete, it's time to assign a **static IP address** to the **Domain Controller (DC)**. This is a crucial step to ensure network stability and reliable domain operations.
+
+---
+
+### 🔒 Why a Static IP is Important
+
+A **Domain Controller** is like the **brain of the network** — it manages:
+
+- **Authentication**
+- **Authorization**
+- **DNS services**
+
+All other devices (clients and servers) rely on the DC to:
+
+- Log in  
+- Locate network resources  
+- Join or stay connected to the domain  
+
+---
+
+### ⚠️ What Could Go Wrong with a Dynamic IP?
+
+If the DC’s IP address changes (as it might with DHCP), the following issues can arise:
+
+- ❌ Devices won't know where to **find the DC**  
+- ❌ **DNS resolution** could break  
+- ❌ **Domain joins** and **logins** may fail  
+- ❌ **Replication** between multiple DCs (if applicable) could be disrupted  
+
+---
+
+### ✅ Solution: Set a Static IP
+
+Assigning a static IP to your Domain Controller ensures:
+
+- Consistent and reliable **network communication**  
+- Proper **DNS functionality**  
+- Smooth domain operations across the environment
 </p>
 <br />
 
