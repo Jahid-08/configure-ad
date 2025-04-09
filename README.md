@@ -270,7 +270,7 @@ Let’s begin the process of installing **Active Directory Domain Services (AD D
    - **AD DS**
    - **Confirmation**
 
-7. On the **Confirmation** tab, click **Install** to begin installing the necessary AD DS components. After it's finished, click **Promote this server to a domain controller** to make **DC-1** a Domain Controller
+7. On the **Confirmation** tab, click **Install** to begin installing the necessary AD DS components. After it's finished, click **Promote this server to a domain controller** to make **DC-1** a Domain Controller, this will then take us to our next step.
 
 ---
 
@@ -281,12 +281,64 @@ This installs the **core components** of Active Directory needed to promote this
 Once complete, we'll be ready to configure our new domain.
 </p>
 <br />
+<br />
+<br />
+
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="565" alt="image" src="https://github.com/user-attachments/assets/0fd9d836-0250-4404-8b6a-72426124f89e" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  
+## 🏰 Promoting DC-1 to a Domain Controller
+
+With **Active Directory Domain Services (AD DS)** installed, the next step is to **promote the server** to function as a **Domain Controller**.
+
+---
+
+### 🚀 Promotion Process
+
+1. In **Server Manager**, click the flag icon in the top-right corner and select:  
+   **"Promote this server to a domain controller"**
+
+2. In the **Deployment Configuration** window:
+   - Select **“Add a new forest”**
+   - Set the **Root domain name** to:  
+     ```
+     mydomain.com
+     ```
+
+3. Click **Next**, then:
+   - Set a **Directory Services Restore Mode (DSRM)** password  
+   - Click **Next**
+
+4. On the **DNS Options** screen:
+   - Uncheck **"Create DNS delegation"**
+
+5. Continue clicking **Next** through the remaining options until you reach the **Prerequisites Check**
+
+6. Once the check completes, click **Install**
+
+   > 📎 Note: The server may **automatically restart** after installation, or prompt you to do so.
+
+---
+
+### 🔐 Logging in After Promotion
+
+After rebooting, **DC-1 is now officially a Domain Controller**.
+
+You now have two login context options:
+
+- 👤 **Local user account** (as before)  
+- 🌐 **Domain user account**
+
+#### 🧑‍💻 Domain User Login Format
+
+To log in as a domain user, use this format for the username:
+
+**Example: mydomain.com\labuser**
+
+
 </p>
 <br />
 
