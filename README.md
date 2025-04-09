@@ -233,7 +233,45 @@ This is a foundational step for building a real-world **enterprise network envir
 <img width="590" alt="image" src="https://github.com/user-attachments/assets/280b3cc4-2595-47d1-a608-ed367aa28fb2" />
 </p>
 <p>
-  To kick off the installation, first we are going to log into DC-1 and it hsould automatically boot up the server manager. After that in the top right ther is a "Manage" tab. we're going to click that and then click "add roles or features" and click next until we see "Server Roles". At the top there is a checkbox that says "Active Directory Domain Services". we're going to check that box and click next until we get to the Confirmation tab in order to actually install the services.
+  
+ ## 🚀 Kicking Off the Active Directory Installation
+
+Let’s begin the process of installing **Active Directory Domain Services (AD DS)** on **DC-1** using the **Server Manager GUI**.
+
+---
+
+### 🖥️ Steps to Follow
+
+1. **Log into DC-1**  
+   Server Manager should automatically launch upon login.
+
+2. **Click on the “Manage” tab**  
+   You’ll find it in the **top-right corner** of the Server Manager window.
+
+3. Select **“Add Roles and Features”**
+
+4. In the wizard, click **Next** through the following screens:
+   - **Before You Begin**
+   - **Installation Type**
+   - **Server Selection**
+
+5. When you reach the **“Server Roles”** page:
+   - ✅ **Check** the box next to **Active Directory Domain Services**
+
+6. Continue clicking **Next** through the remaining prompts:
+   - **Features**
+   - **AD DS**
+   - **Confirmation**
+
+7. On the **Confirmation** tab, click **Install** to begin installing the necessary AD DS components.
+
+---
+
+### 🧩 What This Does
+
+This installs the **core components** of Active Directory needed to promote this server to a **Domain Controller**.
+
+Once complete, we'll be ready to configure our new domain.
 </p>
 <br />
 
