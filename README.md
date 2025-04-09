@@ -187,6 +187,8 @@ We'll attempt to **ping the private IP address** of **DC-1** to ensure that:
 Run the following command in Command Prompt:
 
 **ipconfig /all**
+
+You can see that we were able to successfuly ping 10.0.0.4(DC-1) and you can see that our DNS server is 10.0.0.4 as well.
 </p>
 <br />
 
