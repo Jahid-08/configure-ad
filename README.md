@@ -79,6 +79,7 @@ The **Client VM** simulates a typical **end-user workstation** in a domain envir
 This setup provides hands-on experience with real-world administrative tasks and security configurations in a simulated **corporate network environment**.
 <br />
 <br />
+<br />
 
 <p>
 <img width="870" alt="image" src="https://github.com/user-attachments/assets/79172a71-3245-4864-9611-5fb8e3b70adc" />
@@ -126,6 +127,7 @@ Assigning a static IP to your Domain Controller ensures:
 </p>
 <br />
 <br />
+<br />
 
 <p>
 <img width="949" alt="image" src="https://github.com/user-attachments/assets/cfa993c0-f239-461b-9684-85234c312727" />
@@ -164,6 +166,7 @@ This change aligns the Client with your internal network structure and prepares 
 </p>
 <br />
 <br />
+<br />
 
 <p>
 <img width="428" alt="image" src="https://github.com/user-attachments/assets/1addfe64-e736-4f31-b0f3-eb61d5dcf3b3" />
@@ -193,6 +196,7 @@ Run the following command in Command Prompt:
 
 You can see that we were able to successfuly ping 10.0.0.4(DC-1) and you can see that our DNS server is 10.0.0.4 as well.
 </p>
+<br />
 <br />
 <br />
 
@@ -228,6 +232,9 @@ With AD installed on DC-1, you gain the ability to:
 This is a foundational step for building a real-world **enterprise network environment**.
 </p>
 <br />
+<br />
+<br />
+
 
 <p>
 <img width="590" alt="image" src="https://github.com/user-attachments/assets/280b3cc4-2595-47d1-a608-ed367aa28fb2" />
