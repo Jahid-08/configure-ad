@@ -78,6 +78,7 @@ The **Client VM** simulates a typical **end-user workstation** in a domain envir
 
 This setup provides hands-on experience with real-world administrative tasks and security configurations in a simulated **corporate network environment**.
 <br />
+<br />
 
 <p>
 <img width="870" alt="image" src="https://github.com/user-attachments/assets/79172a71-3245-4864-9611-5fb8e3b70adc" />
@@ -124,6 +125,7 @@ Assigning a static IP to your Domain Controller ensures:
 - Smooth domain operations across the environment
 </p>
 <br />
+<br />
 
 <p>
 <img width="949" alt="image" src="https://github.com/user-attachments/assets/cfa993c0-f239-461b-9684-85234c312727" />
@@ -161,6 +163,7 @@ You're telling the Client:
 This change aligns the Client with your internal network structure and prepares it for seamless domain integration.
 </p>
 <br />
+<br />
 
 <p>
 <img width="428" alt="image" src="https://github.com/user-attachments/assets/1addfe64-e736-4f31-b0f3-eb61d5dcf3b3" />
@@ -191,12 +194,38 @@ Run the following command in Command Prompt:
 You can see that we were able to successfuly ping 10.0.0.4(DC-1) and you can see that our DNS server is 10.0.0.4 as well.
 </p>
 <br />
+<br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  
+ ## 🛠️ Installing Active Directory on DC-1
+
+Now we’re going to install **Active Directory** on our Domain Controller (**DC-1**).
+
+---
+
+### 🧠 What is Active Directory?
+
+**Active Directory (AD)** is a **directory service** developed by Microsoft that provides a **centralized system** for:
+
+- 🔐 Managing and securing **user accounts**
+- 🖥️ Organizing and controlling access to **devices**
+- 🗂️ Administering **network resources** (e.g., shared folders, printers)
+
+---
+
+### 🎯 Why It Matters
+
+With AD installed on DC-1, you gain the ability to:
+
+- ✅ Centralize identity and access management  
+- ✅ Enforce security policies across the network  
+- ✅ Easily scale and organize IT infrastructure in a structured way  
+
+This is a foundational step for building a real-world **enterprise network environment**.
 </p>
 <br />
 
