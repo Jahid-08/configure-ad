@@ -343,11 +343,71 @@ To log in as a domain user, use this format for the username:
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="563" alt="image" src="https://github.com/user-attachments/assets/c0002cc2-4359-4ac3-9b9f-747a3b426012" />
 </p>
 <p>
   
-  Now we are going to create a Domain Admin user within the domain. First, we are going to create an Organizational Unit called **_EMPLOYEES**, and then another one called **_ADMINS**. In order to do this, on PC click the windows start icon, navigate to **Windows Administrative Tools** and then select **Active Directory users and Computers**.A window should pop up, then click on **mydomain.com** or whatever else you would name it and then right click it, then click New -> Organizational Unit and then name it **_EMPLOYEES** and then click ok. Then we're going to do the same thing for **_ADMINS**. Now we're going to create a new admin with the username of jane_admin, and the password is Cyberlab123!. To do this, we'll navigate to the **_ADMINS** folder, New -> User and fill in the information. First name: Jane, Last name: Doe, and then the **User logon name is **jane_admin**. Click next and type the password and uncheck the option **User must change password at next logon** and check **Password never expires(for the lab)**. Click next and then finish.
+## 👤 Creating a Domain Admin User in Active Directory
+
+Now that our Domain Controller is live, we're going to create a **Domain Admin user** by first organizing our structure with **Organizational Units (OUs)**, and then creating the user account.
+
+---
+
+### 🗂️ Step 1: Create Organizational Units
+
+We'll start by creating two OUs:
+
+- `_EMPLOYEES`
+- `_ADMINS`
+
+#### 🧭 Navigation
+
+1. On **DC-1**, click the **Windows Start icon**
+2. Go to **Windows Administrative Tools**
+3. Launch **Active Directory Users and Computers**
+
+#### 📁 Create OUs
+
+1. In the left-hand pane, expand and **right-click** on your domain:  
+
+In our case its **mydomain.com**
+
+2. Choose:  
+**New → Organizational Unit**
+
+3. Name the first OU:  **_EMPLOYEES**. Do the same steps and name the second OU **_ADMINS**
+
+
+---
+
+### 🧑‍💼 Step 2: Create the Domain Admin User
+
+We’ll now create a user named **jane_admin** inside the `_ADMINS` OU.
+
+#### 👣 Steps
+
+1. Inside **Active Directory Users and Computers**, navigate to the `_ADMINS` OU
+2. Right-click `_ADMINS` and choose:  
+**New → User**
+
+3. Fill out the user details:
+- **First name**: Jane  
+- **Last name**: Doe  
+- **User logon name**: `jane_admin`
+
+4. Click **Next**, then set the password:
+- **Password**: `Cyberlab123!`
+
+5. Configure password options:
+- ❌ **Uncheck**: "User must change password at next logon"  
+- ✅ **Check**: "Password never expires" (for lab purposes)
+
+6. Click **Next**, then **Finish**
+
+---
+
+✅ We now have a domain admin user account (`jane_admin`) created and ready for administrative tasks within our domain environment.
+
 </p>
 <br />
 
