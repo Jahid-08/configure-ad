@@ -337,16 +337,17 @@ You now have two login context options:
 To log in as a domain user, use this format for the username:
 
 **Example: mydomain.com\labuser**
-
-
 </p>
+<br />
+<br />
 <br />
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  
+  Now we are going to create a Domain Admin user within the domain. First, we are going to create an Organizational Unit called **_EMPLOYEES**, and then another one called **_ADMINS**. In order to do this, on PC click the windows start icon, navigate to **Windows Administrative Tools** and then select **Active Directory users and Computers**
 </p>
 <br />
 
