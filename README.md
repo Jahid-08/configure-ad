@@ -163,10 +163,30 @@ This change aligns the Client with your internal network structure and prepares 
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="428" alt="image" src="https://github.com/user-attachments/assets/1addfe64-e736-4f31-b0f3-eb61d5dcf3b3" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  
+  ## 📡 Testing Connectivity from Client-1 to DC-1
+
+Now we’ll log into **Client-1** and perform two key tasks to verify connectivity and DNS configuration:
+
+---
+
+### 🔗 1. Ping the Domain Controller
+
+We'll attempt to **ping the private IP address** of **DC-1** to ensure that:
+
+- 🟢 **Network communication** is working between the Client and the Domain Controller
+- ❌ There are no firewall or routing issues preventing basic connectivity
+
+---
+
+### 🧾 2. Verify DNS Configuration
+
+Run the following command in Command Prompt:
+
+**ipconfig /all**
 </p>
 <br />
 
