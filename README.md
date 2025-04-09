@@ -347,7 +347,7 @@ To log in as a domain user, use this format for the username:
 </p>
 <p>
   
-  Now we are going to create a Domain Admin user within the domain. First, we are going to create an Organizational Unit called **_EMPLOYEES**, and then another one called **_ADMINS**. In order to do this, on PC click the windows start icon, navigate to **Windows Administrative Tools** and then select **Active Directory users and Computers**
+  Now we are going to create a Domain Admin user within the domain. First, we are going to create an Organizational Unit called **_EMPLOYEES**, and then another one called **_ADMINS**. In order to do this, on PC click the windows start icon, navigate to **Windows Administrative Tools** and then select **Active Directory users and Computers**.A window should pop up, then click on **mydomain.com** or whatever else you would name it and then right click it, then click New -> Organizational Unit and then name it **_EMPLOYEES** and then click ok. Then we're going to do the same thing for **_ADMINS**. Now we're going to create a new admin with the username of jane_admin, and the password is Cyberlab123!. To do this, we'll navigate to the **_ADMINS** folder, New -> User and fill in the information. First name: Jane, Last name: Doe, and then the **User logon name is **jane_admin**. Click next and type the password and uncheck the option **User must change password at next logon** and check **Password never expires(for the lab)**. Click next and then finish.
 </p>
 <br />
 
