@@ -270,7 +270,7 @@ Let’s begin the process of installing **Active Directory Domain Services (AD D
    - **AD DS**
    - **Confirmation**
 
-7. On the **Confirmation** tab, click **Install** to begin installing the necessary AD DS components.
+7. On the **Confirmation** tab, click **Install** to begin installing the necessary AD DS components. After it's finished, click **Promote this server to a domain controller** to make **DC-1** a Domain Controller
 
 ---
 
