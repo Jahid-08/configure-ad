@@ -410,12 +410,53 @@ We’ll now create a user named **jane_admin** inside the `_ADMINS` OU.
 
 </p>
 <br />
+<br />
+<br />
+
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  
+ ## 🛡️ Making `jane_admin` a True Domain Admin
+
+Just because we named the account with "admin" in the username doesn't mean it actually has administrative privileges yet. We now need to **add the account to the built-in "Domain Admins" group**.
+
+---
+
+### 👣 Steps to Elevate Privileges
+
+1. In **Active Directory Users and Computers**, navigate to the `_ADMINS` OU  
+2. **Right-click** on **Jane Doe** and select **Properties**  
+3. Click on the **Member Of** tab  
+4. Click **Add**  
+5. In the text box, type: **Domain Admins** 
+6. Click **Check Names** – it should underline to confirm the group exists  
+7. Click **OK**, then **Apply**, then **OK** again  
+
+---
+
+✅ `jane_admin` is now officially a **Domain Admin**!
+
+This means the account can:
+
+- Create and manage users  
+- Modify group memberships  
+- Configure Group Policies  
+- Manage the domain environment  
+
+---
+
+### 🔁 Log In as `jane_admin`
+
+Now that the account has elevated privileges:
+
+- **Log out** of your current session  
+- **Log back in** using the domain credentials: **mydomain.com\jane_admin**
+
+We are now working under a **Domain Admin context**, ready to perform administrative tasks across the domain.
+
 </p>
 <br />
 
