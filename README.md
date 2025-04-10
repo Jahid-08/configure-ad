@@ -514,12 +514,36 @@ Once Client-1 reboots, it will officially be a **domain-joined machine**, ready 
 
 </p>
 <br />
+<br />
+<br />
+
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="564" alt="image" src="https://github.com/user-attachments/assets/566e1805-29f7-46b8-b56d-710a961238b9" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  
+ ## 🔍 Verifying Domain Join from the Domain Controller
+
+Now, we’re going to log back into **DC-1** as `jane_admin` to **verify that Client-1 successfully joined the domain**.
+
+---
+
+### 🧭 Navigation Steps:
+
+1. Right-click the **Windows icon**
+2. Go to **Windows Administrative Tools**
+3. Open **Active Directory Users and Computers**
+4. In the left pane:
+   - Double-click your domain (e.g., `mydomain.com`)
+   - Click on the **Computers** container
+
+---
+
+### ✅ What to Look For
+
+You should now see **Client-1** listed under **Computers**, confirming that it’s **officially part of the domain**.
+
 </p>
 <br />
 
