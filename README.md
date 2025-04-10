@@ -468,7 +468,50 @@ We are now working under a **Domain Admin context**, ready to perform administra
 </p>
 <p>
   
-  Now that we are logged in as jane_admin, the next thing we are going to do is joining **Client-1** to our domain **mydomain.com**. To do this, we are going to RDP into Client-1 and login as the original local user of **labuser** and password **Cyberlab123**. Now to join Client-1 to the domain we are going to right click the windows icon in the bottom left -> select system -> Rename this PC(advanced) -> under the "Computer Name" tab click Change -> under the Member of section click "Domain" and in our case type our domain name of **mydomain.com**. -> select ok and then another window should pop up prompting us to login with an account with permissions to join the domain. In that case we will use the login of jane_admin as **mydomain.com\jane_admin** and password **Cyberlab123!**
+ ## 🖥️ Joining Client-1 to the Domain
+
+Now that we're logged in as `jane_admin`, the next step is to **join Client-1 to our domain**: `mydomain.com`.
+
+---
+
+### 🔐 Step-by-Step: Domain Join
+
+1. **RDP into Client-1**
+   - Login using the **local account**:  
+     ```
+     Username: labuser  
+     Password: Cyberlab123
+     ```
+
+2. **Join the Domain**
+   - Right-click the **Windows icon** (bottom left)  
+   - Select **System**  
+   - Click **Rename this PC (Advanced)**  
+   - In the **Computer Name** tab, click **Change**  
+   - Under **Member of**, select **Domain**  
+   - Enter:  
+     ```
+     mydomain.com
+     ```
+   - Click **OK**
+
+3. **Authenticate with Domain Credentials**
+   - A prompt will appear asking for credentials with permission to join the domain  
+   - Enter:
+     ```
+     Username: mydomain.com\jane_admin  
+     Password: Cyberlab123!
+     ```
+
+4. ✅ **Success!**
+   - You should see a welcome message:  
+     _“Welcome to the mydomain.com domain”_  
+   - The system will prompt you to **restart**
+
+---
+
+Once Client-1 reboots, it will officially be a **domain-joined machine**, ready for centralized management and policy application.
+
 </p>
 <br />
 
