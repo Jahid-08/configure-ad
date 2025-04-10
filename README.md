@@ -26,8 +26,13 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 - Setup Domain Controller in Azure
 - Setup our client/End User in Azure
-- Step 3
-- Step 4
+- Configure Custom DNS to point Client to Domain Controller  
+- Join Client to Domain and Verify Successful Domain Registration  
+- Promote Server to Domain Controller & Install Active Directory Services  
+- Create Organizational Units (_EMPLOYEES, _ADMINS, _CLIENTS)  
+- Create and Configure Domain Admin Account (e.g., jane_admin)  
+- Grant Domain Users Remote Desktop Access to Client-1  
+- Generate Bulk Users via PowerShell Script for Testing  
 
 <h2>Deployment and Walkthrough</h2>
 
