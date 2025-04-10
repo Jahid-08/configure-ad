@@ -415,7 +415,7 @@ We’ll now create a user named **jane_admin** inside the `_ADMINS` OU.
 
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="571" alt="image" src="https://github.com/user-attachments/assets/d0fb08ec-b9c5-496c-b873-71ec7c532e3b" />
 </p>
 <p>
   
