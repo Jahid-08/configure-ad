@@ -612,12 +612,41 @@ This sets the stage for mass user testing and remote access simulations.
 
 </p>
 <br />
+<br />
+<br />
+
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="773" alt="image" src="https://github.com/user-attachments/assets/a588f74d-fd8c-40b5-b607-229ee2acb953" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+ ## 🛠️ Creating Bulk Users via PowerShell Script
+
+Now we're going to generate a large number of users for testing purposes by running a PowerShell script on **DC-1**.
+
+---
+
+### 🧾 Steps to Run the Script
+
+1. **Login to DC-1**
+2. Open the **Start Menu** and type `PowerShell ISE`
+3. **Right-click** and select **Run as Administrator**
+4. Once PowerShell ISE opens:
+   - Click **File** → **New**
+   - Then click **File** → **Save As** and name the file:  
+     `create-users.ps1`  
+     (You can save it to the **Desktop**)
+5. Copy and paste the script from this GitHub link into the ISE:  
+   🔗 [Generate-Names-Create-Users.ps1](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
+6. Click the **green play button** at the top to run the script
+
+---
+
+💡 Once the script runs, you'll start seeing a bunch of users being created in the Active Directory console at the bottom of the ISE.
+
+This step sets up a realistic lab environment by simulating a populated enterprise domain.
+
 </p>
 <br />
 
