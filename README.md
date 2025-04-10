@@ -645,7 +645,7 @@ Now we're going to generate a large number of users for testing purposes by runn
 
 💡 Once the script runs, you'll start seeing a bunch of users being created in the Active Directory console at the bottom of the ISE.
 
-This step sets up a realistic lab environment by simulating a populated enterprise domain.
+This step sets up a realistic lab environment by simulating a populated enterprise domain. Once this finishes, we will open up Active Directory and observe the accounts in the **_EMPLOYEES** OU and then attempt to login to **Client-1** with one of the accounts.
 
 </p>
 <br />
