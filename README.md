@@ -459,12 +459,16 @@ We are now working under a **Domain Admin context**, ready to perform administra
 
 </p>
 <br />
+<br />
+<br />
+
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="691" alt="image" src="https://github.com/user-attachments/assets/816e7399-0e7c-43c8-bf9d-986f41784215" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  
+  Now that we are logged in as jane_admin, the next thing we are going to do is joining **Client-1** to our domain **mydomain.com**. To do this, we are going to RDP into Client-1 and login as the original local user of **labuser** and password **Cyberlab123**. Now to join Client-1 to the domain we are going to right click the windows icon in the bottom left -> select system -> Rename this PC(advanced) -> under the "Computer Name" tab click Change -> under the Member of section click "Domain" and in our case type our domain name of **mydomain.com**. -> select ok and then another window should pop up prompting us to login with an account with permissions to join the domain. In that case we will use the login of jane_admin as **mydomain.com\jane_admin** and password **Cyberlab123!**
 </p>
 <br />
 
