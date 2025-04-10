@@ -548,10 +548,34 @@ You should now see **Client-1** listed under **Computers**, confirming that it�
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="562" alt="image" src="https://github.com/user-attachments/assets/8997404b-dc47-47f7-9743-9b020fb4de15" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  
+## 🗂️ Organizing Domain Objects with OUs
+
+Now, for **organizational purposes**, we'll create a new **Organizational Unit (OU)** called **_CLIENTS**.
+
+---
+
+### 🛠️ Creating the _CLIENTS OU
+
+1. Open **Active Directory Users and Computers**
+2. In the left pane, right-click on your domain name (e.g., `mydomain.com`)
+3. Select **New → Organizational Unit**
+4. Name the new OU: `_CLIENTS`
+5. Click **OK**
+
+---
+
+### 🖱️ Moving Client-1 into the _CLIENTS OU
+
+1. Navigate to the **Computers** container
+2. Drag **Client-1** and **drop it** into the **_CLIENTS** OU
+
+---
+
+📌 This step helps keep the domain environment **organized** and **easier to manage** as you scale your network.
 </p>
 <br />
 
