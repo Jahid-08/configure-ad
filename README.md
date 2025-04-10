@@ -578,12 +578,38 @@ Now, for **organizational purposes**, we'll create a new **Organizational Unit (
 📌 This step helps keep the domain environment **organized** and **easier to manage** as you scale your network.
 </p>
 <br />
+<br />
+<br />
+
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="281" alt="image" src="https://github.com/user-attachments/assets/6dd3060c-6cb5-445f-adcc-120c49dad081" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  
+  ## 🧑‍💻 Allowing Domain Users to Log into Client-1
+
+We’re now going to configure **Client-1** so that **non-administrative domain users** can log in. This is essential for future steps where we'll be creating **thousands of users using PowerShell** and testing their ability to log in remotely.
+
+---
+
+### 🔐 Granting Remote Desktop Access to Domain Users
+
+1. **Login to Client-1** using the **jane_admin** account
+2. Right-click the **Windows Start icon** and select **System**
+3. Navigate to **Remote Desktop**
+4. Under the **User accounts** section, click:  
+   **"Select users that can remotely access this PC"**
+5. Click **Add**
+6. Type: `Domain Users`
+7. Click **Check Names**, then **OK**, and **OK** again
+
+---
+
+✅ Now, all **domain users** should be able to **Remote Desktop into Client-1** by default.
+
+This sets the stage for mass user testing and remote access simulations.
+
 </p>
 <br />
 
