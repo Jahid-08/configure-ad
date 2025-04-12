@@ -654,14 +654,24 @@ This step sets up a realistic lab environment by simulating a populated enterpri
 
 </p>
 <br />
+<br />
+<br />
+
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="557" alt="image" src="https://github.com/user-attachments/assets/efaca3b3-2af7-40a6-b647-68db9bbc0786" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
+  
+Now if we navigate back to **Active Directory Users and Computers (ADUC)**, we can click on the **_EMPLOYEES** Organizational Unit and see all of the randomly generated users that were created by our script. These users are all part of the domain and have been successfully added to the directory.
+
+Each of these accounts has a default password of **Password1**.
+
+Next, we’re going to test domain login functionality by selecting one of these users and logging into **Client-1**.</p>
 <br />
+<br />
+<br />
+
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
