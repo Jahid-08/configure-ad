@@ -674,10 +674,77 @@ Next, we’re going to test domain login functionality by selecting one of these
 
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="698" alt="image" src="https://github.com/user-attachments/assets/1b5edfc0-13d3-41b9-b126-2ab212e6577f" />
+  <img width="635" alt="image" src="https://github.com/user-attachments/assets/65732096-b93b-4263-b644-16fe83e94985" />
+  <img width="311" alt="image" src="https://github.com/user-attachments/assets/be547413-eaae-4625-bfab-041a069596a1" />
+
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+ ## 🔐 Group Policy: Account Lockout & Account Management
+
+Now we are going to tackle **Group Policy** and managing accounts—like account lockouts, enabling/disabling users, and checking logs.
+
+---
+
+### 🧪 Step 1: Configure Account Lockout Policy
+
+We’re going to configure a **Group Policy** so that accounts get locked after several failed login attempts.
+
+**On DC-1:**
+
+1. Click the **Start** menu 🔍, type `gpmc.msc`, and press **Enter**.
+2. In the **Group Policy Management Console**, expand: Domains ↳ mydomain.com
+3. Right-click **Default Domain Policy** and select **Edit**.
+4. Navigate to: Computer Configuration ↳ Policies ↳ Windows Settings ↳ Security Settings ↳ Account Policies ↳ Account Lockout Policy
+5. Configure the following settings:
+- **Account lockout duration**: `30 minutes`
+- **Account lockout threshold**: `5`
+- **Reset account lockout counter after**: `10 minutes`
+- ✅ Ensure **Allow administrator account lockout** is enabled
+
+---
+
+### 🔄 Step 2: Apply the Group Policy Immediately
+
+Instead of waiting for the policy to automatically propagate, we’ll force an update.
+
+**On Client-1 (logged in as `jane_admin`):**
+
+1. Open **Command Prompt** (`cmd`)
+2. Run the following command: gpupdate /force
+This forces the client machine to immediately apply the new Group Policy settings.
+
+---
+
+### 🔐 Step 3: Test Account Lockout Policy
+
+Now we’ll test the lockout feature using one of the randomly generated users from the **_EMPLOYEES** OU.
+
+1. **Log out** of Client-1
+2. Attempt to log in using incorrect passwords for a selected user
+3. After 5 failed attempts, you should get a message like:
+> *"The referenced account is currently locked out and may not be logged on to."*
+
+---
+
+### 🔓 Step 4: Unlock the User Account
+
+Now we'll go unlock that account from the Domain Controller.
+
+**On DC-1:**
+
+1. Open **Active Directory Users and Computers**
+2. Navigate to the **_EMPLOYEES** OU
+3. Find the locked user and double-click their name
+4. Go to the **Account** tab
+5. You should see a message saying the account is locked out
+6. ✅ Check the box to unlock the account and click **Apply**, then **OK**
+
+Now you should be able to log in to **Client-1** using the correct password for that user.
+
+---
 </p>
 <br />
 
