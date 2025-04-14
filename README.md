@@ -832,12 +832,55 @@ The down arrow icon will disappear, and the user will now be able to log in agai
 This is an essential skill for account lifecycle management in Active Directory 💼
 </p>
 <br />
+<br />
+<br />
+
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="953" alt="image" src="https://github.com/user-attachments/assets/ce9e29af-298e-42d5-b6e3-6d9833511a3e" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  
+## 📜 Observing Failed Login Attempts via Event Viewer
+
+Now that we’ve set up account lockout policies and attempted multiple failed logins, it’s time to **inspect the logs** on **Client-1** to verify those activities were tracked.
+
+---
+
+### 🔍 View Failed Login Logs
+
+**On Client-1 (logged in as `jane_admin`):**
+
+1. Click the Start Menu and search for **Event Viewer**
+2. In the left pane, navigate to:  
+   `Windows Logs` ➡️ `Security`
+3. Scroll through the logs until you see entries labeled **Audit Failure**
+
+---
+
+### 🧠 What to Look For
+
+- **Event ID:** `4625`  
+  This indicates a **failed login attempt**
+- **Details section:**
+  - **Account Name** that failed to log in
+  - **Source IP Address** from where the login was attempted
+
+This is useful for auditing login behavior and identifying possible unauthorized access attempts 🕵️‍♂️
+
+---
+
+### ✅ Wrap-Up
+
+We’ve now:
+
+- ✅ Installed and deployed Active Directory
+- ✅ Created OUs, users, and groups
+- ✅ Joined machines to a domain
+- ✅ Configured Group Policies
+- ✅ Observed login behavior through logs
+
+This lab gave us a solid **foundation in AD and GPO**, setting the stage for more advanced configurations in the future 💪
 </p>
 <br />
 
