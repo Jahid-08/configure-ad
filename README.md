@@ -747,12 +747,38 @@ Now you should be able to log in to **Client-1** using the correct password for 
 ---
 </p>
 <br />
+<br />
+<br />
+
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="383" alt="image" src="https://github.com/user-attachments/assets/7d608b36-5caf-4bd4-bb8d-9aeef84708f4" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+ ## 🔄 Resetting a User's Password in Active Directory
+
+Sometimes users forget their passwords. As an admin, you can easily reset it.
+
+---
+
+### 🛠️ Step-by-Step: Reset a User Password
+
+**On DC-1:**
+
+1. Open **Active Directory Users and Computers**
+2. Navigate to the **_EMPLOYEES** Organizational Unit (or wherever your user is located)
+3. Right-click on the user account you want to reset
+4. Select **Reset Password...**
+5. Enter the new password  
+   📝 (For example: `Password123!`)
+6. ✅ Optionally check the box to **Unlock the user's account** if it was locked
+7. Click **OK** to confirm
+
+---
+
+Now the user can log in with their new password!
+
 </p>
 <br />
 
