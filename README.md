@@ -777,16 +777,59 @@ Sometimes users forget their passwords. As an admin, you can easily reset it.
 
 ---
 
-Now the user can log in with their new password!
+Now the user can log in with their new password.
 
 </p>
 <br />
+<br />
+<br />
+
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="387" alt="image" src="https://github.com/user-attachments/assets/e00199bf-a5d2-442c-9357-1c3f1e8b9e67" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+  ## 🚫 Enabling and Disabling User Accounts in Active Directory
+
+Disabling an account is useful when an employee leaves the company, an account is compromised, or you need to temporarily restrict access. Let’s walk through how to disable and re-enable an account.
+
+---
+
+### 🔒 Disable a User Account
+
+**On DC-1:**
+
+1. Open **Active Directory Users and Computers**
+2. Navigate to the user you want to disable (e.g., under the **_EMPLOYEES** OU)
+3. Right-click the user account
+4. Select **Disable Account**
+
+✅ You’ll notice a **down arrow icon** on the user’s avatar indicating the account is disabled.
+
+---
+
+### 🔁 Try Logging in as the Disabled User
+
+1. Go to **Client-1**
+2. Try to log in using the disabled account credentials
+
+❌ You’ll see an error — the user cannot log in because the account is disabled.
+
+---
+
+### 🔓 Re-Enable the User Account
+
+**Back on DC-1:**
+
+1. Right-click the same user account
+2. Select **Enable Account**
+
+The down arrow icon will disappear, and the user will now be able to log in again.
+
+---
+
+This is an essential skill for account lifecycle management in Active Directory 💼
 </p>
 <br />
 
